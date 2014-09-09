@@ -34,6 +34,9 @@
 		24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4516F18DFF10B0001FCFD /* M2ScoreView.m */; };
 		24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */; };
 		24C4518118E265390001FCFD /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4518018E265390001FCFD /* M2Overlay.m */; };
+		A0F7086719BF9E0F002E9F01 /* M2JoyfulTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086619BF9E0F002E9F01 /* M2JoyfulTheme.m */; };
+		A0F7086A19BF9F12002E9F01 /* M2DefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086919BF9F12002E9F01 /* M2DefaultTheme.m */; };
+		A0F7086D19BF9F82002E9F01 /* M2VibrantTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086C19BF9F82002E9F01 /* M2VibrantTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,12 @@
 		24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
 		24C4517F18E265390001FCFD /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
 		24C4518018E265390001FCFD /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		A0F7086519BF9E0F002E9F01 /* M2JoyfulTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2JoyfulTheme.h; sourceTree = "<group>"; };
+		A0F7086619BF9E0F002E9F01 /* M2JoyfulTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2JoyfulTheme.m; sourceTree = "<group>"; };
+		A0F7086819BF9F12002E9F01 /* M2DefaultTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2DefaultTheme.h; sourceTree = "<group>"; };
+		A0F7086919BF9F12002E9F01 /* M2DefaultTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2DefaultTheme.m; sourceTree = "<group>"; };
+		A0F7086B19BF9F82002E9F01 /* M2VibrantTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2VibrantTheme.h; sourceTree = "<group>"; };
+		A0F7086C19BF9F82002E9F01 /* M2VibrantTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2VibrantTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +235,12 @@
 			children = (
 				2443DCA118D6649500C920C1 /* M2Theme.h */,
 				2443DCA218D6649500C920C1 /* M2Theme.m */,
+				A0F7086B19BF9F82002E9F01 /* M2VibrantTheme.h */,
+				A0F7086C19BF9F82002E9F01 /* M2VibrantTheme.m */,
+				A0F7086519BF9E0F002E9F01 /* M2JoyfulTheme.h */,
+				A0F7086619BF9E0F002E9F01 /* M2JoyfulTheme.m */,
+				A0F7086819BF9F12002E9F01 /* M2DefaultTheme.h */,
+				A0F7086919BF9F12002E9F01 /* M2DefaultTheme.m */,
 			);
 			path = Appearance;
 			sourceTree = "<group>";
@@ -372,6 +387,7 @@
 				24C4515B18D6DC4A0001FCFD /* M2Cell.m in Sources */,
 				24C4516818DD64A90001FCFD /* M2GridView.m in Sources */,
 				2443DC9A18D663FC00C920C1 /* M2Scene.m in Sources */,
+				A0F7086719BF9E0F002E9F01 /* M2JoyfulTheme.m in Sources */,
 				24C4515E18D6DC740001FCFD /* M2Grid.m in Sources */,
 				24C4518118E265390001FCFD /* M2Overlay.m in Sources */,
 				2443DCAF18D6C18400C920C1 /* M2Tile.m in Sources */,
@@ -379,6 +395,8 @@
 				24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */,
 				2443DCA318D6649500C920C1 /* M2Theme.m in Sources */,
 				24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */,
+				A0F7086D19BF9F82002E9F01 /* M2VibrantTheme.m in Sources */,
+				A0F7086A19BF9F12002E9F01 /* M2DefaultTheme.m in Sources */,
 				24C4516418DABABE0001FCFD /* M2GlobalState.m in Sources */,
 				2443DC6818D662CA00C920C1 /* M2AppDelegate.m in Sources */,
 				2443DC9B18D663FC00C920C1 /* M2GameManager.m in Sources */,
