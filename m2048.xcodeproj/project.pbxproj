@@ -37,6 +37,7 @@
 		A0F7086719BF9E0F002E9F01 /* M2JoyfulTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086619BF9E0F002E9F01 /* M2JoyfulTheme.m */; };
 		A0F7086A19BF9F12002E9F01 /* M2DefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086919BF9F12002E9F01 /* M2DefaultTheme.m */; };
 		A0F7086D19BF9F82002E9F01 /* M2VibrantTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086C19BF9F82002E9F01 /* M2VibrantTheme.m */; };
+		A0F7087119BFA848002E9F01 /* M2AppereanceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7087019BFA848002E9F01 /* M2AppereanceUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		A0F7086919BF9F12002E9F01 /* M2DefaultTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2DefaultTheme.m; sourceTree = "<group>"; };
 		A0F7086B19BF9F82002E9F01 /* M2VibrantTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2VibrantTheme.h; sourceTree = "<group>"; };
 		A0F7086C19BF9F82002E9F01 /* M2VibrantTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2VibrantTheme.m; sourceTree = "<group>"; };
+		A0F7086F19BFA848002E9F01 /* M2AppereanceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2AppereanceUtils.h; sourceTree = "<group>"; };
+		A0F7087019BFA848002E9F01 /* M2AppereanceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2AppereanceUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 				2443DC6618D662CA00C920C1 /* M2AppDelegate.h */,
 				2443DC6718D662CA00C920C1 /* M2AppDelegate.m */,
 				2443DC6918D662CA00C920C1 /* Main.storyboard */,
+				A0F7086E19BFA815002E9F01 /* Utils */,
 				2443DC9C18D6645800C920C1 /* Appearance */,
 				2443DC9D18D6645800C920C1 /* Controller */,
 				24C4516018DABABE0001FCFD /* Global */,
@@ -281,6 +285,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A0F7086E19BFA815002E9F01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0F7086F19BFA848002E9F01 /* M2AppereanceUtils.h */,
+				A0F7087019BFA848002E9F01 /* M2AppereanceUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -395,6 +408,7 @@
 				24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */,
 				2443DCA318D6649500C920C1 /* M2Theme.m in Sources */,
 				24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */,
+				A0F7087119BFA848002E9F01 /* M2AppereanceUtils.m in Sources */,
 				A0F7086D19BF9F82002E9F01 /* M2VibrantTheme.m in Sources */,
 				A0F7086A19BF9F12002E9F01 /* M2DefaultTheme.m in Sources */,
 				24C4516418DABABE0001FCFD /* M2GlobalState.m in Sources */,
