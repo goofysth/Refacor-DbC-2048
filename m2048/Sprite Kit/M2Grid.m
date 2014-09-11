@@ -29,13 +29,8 @@
     // Set up the grid with all empty cells.
     _grid = [[NSMutableArray alloc] initWithCapacity:dimension];
     
-    for (NSInteger i = 0; i < dimension; i++) {
-      NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:dimension];
-      for (NSInteger j = 0; j < dimension; j++) {
-        [array addObject:[[M2Cell alloc] initWithPosition:M2PositionMake(i, j)]];
-      }
-      [_grid addObject:array];
-    }
+    // Alloc and init grid
+      [M2Grid allocCellsOnGrid:_grid withSize:dimension];
     
     // Record the dimension of the grid.
     self.dimension = dimension;
@@ -46,6 +41,16 @@
   return self;
 }
 
++ (void) allocCellsOnGrid:(NSMutableArray *)_grid withSize:(NSInteger)dimension
+{
+    for (NSInteger i = 0; i < dimension; i++) {
+        NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:dimension];
+        for (NSInteger j = 0; j < dimension; j++) {
+            [array addObject:[[M2Cell alloc] initWithPosition:M2PositionMake(i, j)]];
+        }
+        [_grid addObject:array];
+    }
+}
 
 # pragma mark - Iterator
 

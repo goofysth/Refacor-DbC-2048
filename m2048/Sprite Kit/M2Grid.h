@@ -30,6 +30,13 @@ typedef void (^IteratorBlock)(M2Position);
  */
 - (instancetype)initWithDimension:(NSInteger)dimension;
 
+/**
+ *  Allocates and initializes passed grid which size is passed as second parameter.
+ *
+ *  @param _grid     Grid which will be set up.
+ *  @param dimension Dimensions of passed grid.
+ */
++ (void) allocCellsOnGrid:(NSMutableArray *)_grid withSize:(NSInteger)dimension;
 
 /**
  * Iterates over the grid and calls the block, which takes in the M2Position
