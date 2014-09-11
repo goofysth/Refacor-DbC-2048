@@ -19,6 +19,13 @@
 @property (nonatomic, weak) M2Cell *cell;
 
 /**
+ Initializes tile value lavel
+ @param which label to init
+ @return return initialized label
+ */
++ (SKLabelNode *) initTileValueLabel: (SKLabelNode *) _value;
+
+/**
  * Creates and inserts a new tile at the specified cell.
  *
  * @param cell The cell to insert tile into.

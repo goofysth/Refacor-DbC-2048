@@ -52,10 +52,7 @@
     _pendingActions = [[NSMutableArray alloc] init];
     
     // Set up value label.
-    _value = [SKLabelNode labelNodeWithFontNamed:[GSTATE boldFontName]];
-    _value.position = CGPointMake(GSTATE.tileSize / 2, GSTATE.tileSize / 2);
-    _value.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter;
-    _value.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
+    _value = [M2Tile initTileValueLabel:_value];
     [self addChild:_value];
     
     // For Fibonacci game, which is way harder than 2048 IMO, 40 seems to be the easiest number.
@@ -69,6 +66,15 @@
   return self;
 }
 
++ (SKLabelNode *) initTileValueLabel:(SKLabelNode *)_value
+{
+    _value = [SKLabelNode labelNodeWithFontNamed:[GSTATE boldFontName]];
+    _value.position = CGPointMake(GSTATE.tileSize / 2, GSTATE.tileSize / 2);
+    _value.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter;
+    _value.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
+    
+    return _value;
+}
 
 # pragma mark - Public methods
 
