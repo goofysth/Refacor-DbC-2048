@@ -9,13 +9,7 @@
 #import "M2Scene.h"
 #import "M2GameManager.h"
 #import "M2GridView.h"
-
-// The min distance in one direction for an effective swipe.
-#define EFFECTIVE_SWIPE_DISTANCE_THRESHOLD 20.0f
-
-// The max ratio between the translation in x and y directions
-// to make a swipe valid. i.e. diagonal swipes are invalid.
-#define VALID_SWIPE_DIRECTION_THRESHOLD 2.0f
+#import "M2SKUtils.h"
 
 @implementation M2Scene {
   /** The game manager that controls all the logic of the game. */

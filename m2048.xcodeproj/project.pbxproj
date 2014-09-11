@@ -34,6 +34,7 @@
 		24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4516F18DFF10B0001FCFD /* M2ScoreView.m */; };
 		24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */; };
 		24C4518118E265390001FCFD /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4518018E265390001FCFD /* M2Overlay.m */; };
+		A090C8E219C2069000367E83 /* M2SKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A090C8E119C2069000367E83 /* M2SKUtils.m */; };
 		A0CE9C9219C0667200B89526 /* M2Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CE9C9119C0667200B89526 /* M2Properties.m */; };
 		A0F7086719BF9E0F002E9F01 /* M2JoyfulTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086619BF9E0F002E9F01 /* M2JoyfulTheme.m */; };
 		A0F7086A19BF9F12002E9F01 /* M2DefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7086919BF9F12002E9F01 /* M2DefaultTheme.m */; };
@@ -97,6 +98,8 @@
 		24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
 		24C4517F18E265390001FCFD /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
 		24C4518018E265390001FCFD /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		A090C8E019C2069000367E83 /* M2SKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SKUtils.h; sourceTree = "<group>"; };
+		A090C8E119C2069000367E83 /* M2SKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SKUtils.m; sourceTree = "<group>"; };
 		A0CE9C9019C0667200B89526 /* M2Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Properties.h; sourceTree = "<group>"; };
 		A0CE9C9119C0667200B89526 /* M2Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Properties.m; sourceTree = "<group>"; };
 		A0F7086519BF9E0F002E9F01 /* M2JoyfulTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2JoyfulTheme.h; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				2443DC9618D663FC00C920C1 /* M2Scene.m */,
 				2443DCAD18D6C18400C920C1 /* M2Tile.h */,
 				2443DCAE18D6C18400C920C1 /* M2Tile.m */,
+				A090C8E019C2069000367E83 /* M2SKUtils.h */,
+				A090C8E119C2069000367E83 /* M2SKUtils.m */,
 			);
 			path = "Sprite Kit";
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				24C4516418DABABE0001FCFD /* M2GlobalState.m in Sources */,
 				2443DC6818D662CA00C920C1 /* M2AppDelegate.m in Sources */,
 				2443DC9B18D663FC00C920C1 /* M2GameManager.m in Sources */,
+				A090C8E219C2069000367E83 /* M2SKUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

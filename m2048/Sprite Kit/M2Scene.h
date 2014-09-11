@@ -2,7 +2,6 @@
 //  M2Scene.h
 //  m2048
 //
-
 //  Copyright (c) 2014 Danqing. All rights reserved.
 //
 
