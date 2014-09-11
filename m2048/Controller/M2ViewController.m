@@ -14,6 +14,7 @@
 #import "M2ScoreView.h"
 #import "M2Overlay.h"
 #import "M2GridView.h"
+#import "M2ControllerUtils.h"
 
 @implementation M2ViewController {
   IBOutlet UIButton *_restartButton;
@@ -29,6 +30,7 @@
   IBOutlet UIImageView *_overlayBackground;
 }
 
+
 - (void)viewDidLoad
 {
   [super viewDidLoad];
@@ -37,11 +39,9 @@
   
   _bestView.score.text = [NSString stringWithFormat:@"%ld", (long)[Settings integerForKey:@"Best Score"]];
   
-  _restartButton.layer.cornerRadius = [GSTATE cornerRadius];
-  _restartButton.layer.masksToBounds = YES;
+    _restartButton = [M2ControllerUtils setButtonLook:_restartButton];
   
-  _settingsButton.layer.cornerRadius = [GSTATE cornerRadius];
-  _settingsButton.layer.masksToBounds = YES;
+    _settingsButton = [M2ControllerUtils setButtonLook:_settingsButton];
   
   _overlay.hidden = YES;
   _overlayBackground.hidden = YES;
@@ -68,37 +68,18 @@
   [_scoreView updateAppearance];
   [_bestView updateAppearance];
   
-  _restartButton.backgroundColor = [GSTATE buttonColor];
-  _restartButton.titleLabel.font = [UIFont fontWithName:[GSTATE boldFontName] size:14];
+    _restartButton = [M2ControllerUtils updateButtonLook:_restartButton];
   
-  _settingsButton.backgroundColor = [GSTATE buttonColor];
-  _settingsButton.titleLabel.font = [UIFont fontWithName:[GSTATE boldFontName] size:14];
-  
-  _targetScore.textColor = [GSTATE buttonColor];
+    _settingsButton = [M2ControllerUtils updateButtonLook:_settingsButton];
   
   long target = [GSTATE valueForLevel:GSTATE.winningLevel];
-  
-  if (target > 100000) {
-    _targetScore.font = [UIFont fontWithName:[GSTATE boldFontName] size:34];
-  } else if (target < 10000) {
-    _targetScore.font = [UIFont fontWithName:[GSTATE boldFontName] size:42];
-  } else {
-    _targetScore.font = [UIFont fontWithName:[GSTATE boldFontName] size:40];
-  }
-  
-  _targetScore.text = [NSString stringWithFormat:@"%ld", target];
+    _targetScore = [M2ControllerUtils setTargetScoreText:_targetScore];
   
   _subtitle.textColor = [GSTATE buttonColor];
   _subtitle.font = [UIFont fontWithName:[GSTATE regularFontName] size:14];
   _subtitle.text = [NSString stringWithFormat:@"Join the numbers to get to %ld!", target];
   
-  _overlay.message.font = [UIFont fontWithName:[GSTATE boldFontName] size:36];
-  _overlay.keepPlaying.titleLabel.font = [UIFont fontWithName:[GSTATE boldFontName] size:17];
-  _overlay.restartGame.titleLabel.font = [UIFont fontWithName:[GSTATE boldFontName] size:17];
-  
-  _overlay.message.textColor = [GSTATE buttonColor];
-  [_overlay.keepPlaying setTitleColor:[GSTATE buttonColor] forState:UIControlStateNormal];
-  [_overlay.restartGame setTitleColor:[GSTATE buttonColor] forState:UIControlStateNormal];
+    _overlay = [M2ControllerUtils setOverlay:_overlay];
 }
 
 
