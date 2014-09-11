@@ -12,7 +12,7 @@
 
 @interface M2GlobalState ()
 
-@property (nonatomic, readwrite) NSInteger dimension;
+@property (nonatomic, readwrite) NSInteger gridDimension;
 @property (nonatomic, readwrite) NSInteger winningLevel;
 @property (nonatomic, readwrite) NSInteger tileSize;
 @property (nonatomic, readwrite) NSInteger borderWidth;
@@ -62,7 +62,7 @@
 
 - (void)loadGlobalState
 {
-  self.dimension = [Settings integerForKey:kBoardSize] + 3;
+  self.gridDimension = [Settings integerForKey:kBoardSize] + 3;
   self.borderWidth = [M2Properties kDefaultBorderWidth];
   self.cornerRadius = [M2Properties kDefaultCornerRadius];
   self.animationDuration = [M2Properties kDefaultAnimationDuration];
@@ -73,31 +73,33 @@
   self.needRefresh = NO;
 }
 
+#pragma mark Initializing properties
 
 - (NSInteger)tileSize
 {
-    return [M2Properties kTileSizeForGridDimension:self.dimension];
+    return [M2Properties kTileSizeForGridDimension:self.gridDimension];
 }
 
 
 - (NSInteger)horizontalOffset
 {
-  CGFloat width = self.dimension * (self.tileSize + self.borderWidth) + self.borderWidth;
-  return ([[UIScreen mainScreen] bounds].size.width - width) / 2;
+  CGFloat appSceneWidth = self.gridDimension * (self.tileSize + self.borderWidth) + self.borderWidth;
+  return ([[UIScreen mainScreen] bounds].size.width - appSceneWidth) / 2;
 }
 
 
 - (NSInteger)verticalOffset
 {
-  CGFloat height = self.dimension * (self.tileSize + self.borderWidth) + self.borderWidth + 120;
-  return ([[UIScreen mainScreen] bounds].size.height - height) / 2;
+  CGFloat appSceneHeight = self.gridDimension * (self.tileSize + self.borderWidth) + self.borderWidth + 120;
+  return ([[UIScreen mainScreen] bounds].size.height - appSceneHeight) / 2;
 }
 
+#pragma mark Tile level and merge handling 
 
 - (NSInteger)winningLevel
 {
   if (GSTATE.gameType == M2GameTypePowerOf3) {
-    switch (self.dimension) {
+    switch (self.gridDimension) {
       case 3: return 4;
       case 4: return 5;
       case 5: return 6;
@@ -106,8 +108,8 @@
   }
   
   NSInteger level = 11;
-  if (self.dimension == 3) return level - 1;
-  if (self.dimension == 5) return level + 2;
+  if (self.gridDimension == 3) return level - 1;
+  if (self.gridDimension == 5) return level + 2;
   return level;
 }
 
@@ -135,14 +137,14 @@
 - (NSInteger)valueForLevel:(NSInteger)level
 {
   if (self.gameType == M2GameTypeFibonacci) {
-    NSInteger a = 1;
-    NSInteger b = 1;
+    NSInteger fibNum1 = 1;
+    NSInteger fibNum2 = 1;
     for (NSInteger i = 0; i < level; i++) {
-      NSInteger c = a + b;
-      a = b;
-      b = c;
+      NSInteger fibNum3 = fibNum1 + fibNum2;
+      fibNum1 = fibNum2;
+      fibNum2 = fibNum3;
     }
-    return b;
+    return fibNum2;
   } else {
     NSInteger value = 1;
     NSInteger base = self.gameType == M2GameTypePowerOf2 ? 2 : 3;
@@ -170,7 +172,7 @@
 
 - (CGFloat)textSizeForValue:(NSInteger)value
 {
-  NSInteger offset = self.dimension == 5 ? 2 : 0;
+  NSInteger offset = self.gridDimension == 5 ? 2 : 0;
   if (value < 100) {
     return 32 - offset;
   } else if (value < 1000) {

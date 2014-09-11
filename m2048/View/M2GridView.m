@@ -24,7 +24,7 @@
 
 - (instancetype)init
 {
-  NSInteger side = GSTATE.dimension * (GSTATE.tileSize + GSTATE.borderWidth) + GSTATE.borderWidth;
+  NSInteger side = GSTATE.gridDimension * (GSTATE.tileSize + GSTATE.borderWidth) + GSTATE.borderWidth;
   CGFloat verticalOffset = [[UIScreen mainScreen] bounds].size.height - GSTATE.verticalOffset;
   return [self initWithFrame:CGRectMake(GSTATE.horizontalOffset, verticalOffset - side, side, side)];
 }

@@ -165,7 +165,7 @@
   
   // Center the overlay in the board.
   CGFloat verticalOffset = [[UIScreen mainScreen] bounds].size.height - GSTATE.verticalOffset;
-  NSInteger side = GSTATE.dimension * (GSTATE.tileSize + GSTATE.borderWidth) + GSTATE.borderWidth;
+  NSInteger side = GSTATE.gridDimension * (GSTATE.tileSize + GSTATE.borderWidth) + GSTATE.borderWidth;
   _overlay.center = CGPointMake(GSTATE.horizontalOffset + side / 2, verticalOffset - side / 2);
   
   [UIView animateWithDuration:0.5 delay:1.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{

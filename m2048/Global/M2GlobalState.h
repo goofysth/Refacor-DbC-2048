@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, M2GameType) {
 
 @interface M2GlobalState : NSObject
 
-@property (nonatomic, readonly) NSInteger dimension;
+@property (nonatomic, readonly) NSInteger gridDimension;
 @property (nonatomic, readonly) NSInteger winningLevel;
 @property (nonatomic, readonly) NSInteger tileSize;
 @property (nonatomic, readonly) NSInteger borderWidth;

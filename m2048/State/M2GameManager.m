@@ -51,13 +51,13 @@ BOOL iterate(NSInteger value, BOOL countUp, NSInteger upper, NSInteger lower) {
 
 - (void)startNewSessionWithScene:(M2Scene *)scene
 {
-  if (_grid && _grid.dimension == GSTATE.dimension) {
+  if (_grid && _grid.dimension == GSTATE.gridDimension) {
     // If there is an existing grid and its dimension is still valid,
     // we keep it, only removing all existing tiles with animation.
     [_grid removeAllTilesAnimated:YES];
   } else {
     if (_grid) [_grid removeAllTilesAnimated:NO];
-    _grid = [[M2Grid alloc] initWithDimension:GSTATE.dimension];
+    _grid = [[M2Grid alloc] initWithDimension:GSTATE.gridDimension];
     _grid.scene = scene;
   }
   
@@ -190,7 +190,7 @@ BOOL iterate(NSInteger value, BOOL countUp, NSInteger upper, NSInteger lower) {
     
   // Add one more tile to the grid.
   [_grid insertTileAtRandomAvailablePositionWithDelay:YES];
-  if (GSTATE.dimension == 5 && GSTATE.gameType == M2GameTypePowerOf2)
+  if (GSTATE.gridDimension == 5 && GSTATE.gameType == M2GameTypePowerOf2)
     [_grid insertTileAtRandomAvailablePositionWithDelay:YES];
     
   if (![self movesAvailable]) {
