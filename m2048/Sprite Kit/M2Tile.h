@@ -19,9 +19,10 @@
 @property (nonatomic, weak) M2Cell *cell;
 
 /**
- Initializes tile value lavel
- @param which label to init
- @return return initialized label
+ * Initializes tile value lavel
+ *
+ * @param which label to init
+ * @return return initialized label
  */
 + (SKLabelNode *) initTileValueLabel: (SKLabelNode *) _value;
 
@@ -42,7 +43,6 @@
  * @return YES if the two tiles can be merged.
  */
 - (BOOL)canMergeWithTile:(M2Tile *)tile;
-
 
 /**
  * Checks whether this tile can merge with the given tile, and merge them
