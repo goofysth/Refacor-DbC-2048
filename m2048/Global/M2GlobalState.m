@@ -8,11 +8,7 @@
 
 #import "M2GlobalState.h"
 #import "M2Theme.h"
-
-#define kGameType  @"Game Type"
-#define kTheme     @"Theme"
-#define kBoardSize @"Board Size"
-#define kBestScore @"Best Score"
+#import "M2Properties.h"
 
 @interface M2GlobalState ()
 
@@ -67,9 +63,9 @@
 - (void)loadGlobalState
 {
   self.dimension = [Settings integerForKey:kBoardSize] + 3;
-  self.borderWidth = 5;
-  self.cornerRadius = 4;
-  self.animationDuration = 0.1;
+  self.borderWidth = [M2Properties kDefaultBorderWidth];
+  self.cornerRadius = [M2Properties kDefaultCornerRadius];
+  self.animationDuration = [M2Properties kDefaultAnimationDuration];
   self.gameType = [Settings integerForKey:kGameType];
   self.horizontalOffset = [self horizontalOffset];
   self.verticalOffset = [self verticalOffset];
@@ -80,10 +76,7 @@
 
 - (NSInteger)tileSize
 {
-  if (self.dimension <= 4) {
-    return 66;
-  }
-  return 56;
+    return [M2Properties kTileSizeForGridDimension:self.dimension];
 }
 
 

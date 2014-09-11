@@ -14,9 +14,9 @@
 #define NotifCtr [NSNotificationCenter defaultCenter]
 
 typedef NS_ENUM(NSInteger, M2GameType) {
-  M2GameTypeFibonacci = 2,
   M2GameTypePowerOf2 = 0,
-  M2GameTypePowerOf3 = 1
+  M2GameTypePowerOf3 = 1,
+  M2GameTypeFibonacci = 2
 };
 
 @interface M2GlobalState : NSObject
