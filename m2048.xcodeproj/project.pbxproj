@@ -143,6 +143,7 @@
 		2443DC4918D662CA00C920C1 = {
 			isa = PBXGroup;
 			children = (
+				A09D030119C36C4D00610043 /* Contracts */,
 				2443DC5D18D662CA00C920C1 /* m2048 */,
 				2443DC8118D662CA00C920C1 /* m2048Tests */,
 				2443DC5418D662CA00C920C1 /* Frameworks */,
@@ -298,6 +299,13 @@
 				24C4518018E265390001FCFD /* M2Overlay.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A09D030119C36C4D00610043 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Contracts;
 			sourceTree = "<group>";
 		};
 		A0F7086E19BFA815002E9F01 /* Utils */ = {
