@@ -11,7 +11,7 @@
         #define APPLY_CONTRACT(c)
 #endif
 
-int main (int argc, const char * argv[]) {
+/*int main (int argc, const char * argv[]) {
     
     @autoreleasepool {
         
@@ -29,3 +29,4 @@ int main (int argc, const char * argv[]) {
     
     return 0;
 }
+*/

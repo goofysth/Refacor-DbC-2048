@@ -15,7 +15,7 @@ BEGIN_CONTRACT (Account)
 	- (void) deposit: (int) sum VERIFY_PROC (
 		NSLog (@"deposit %d", sum);
 		REQUIRE (
-			FACT (sum == 0);
+			FACT (sum != 0);
 		)
 		MODIFY (AllDeposits);
 		MODIFY (balance);

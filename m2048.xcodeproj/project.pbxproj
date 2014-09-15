@@ -34,6 +34,9 @@
 		24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4516F18DFF10B0001FCFD /* M2ScoreView.m */; };
 		24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */; };
 		24C4518118E265390001FCFD /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4518018E265390001FCFD /* M2Overlay.m */; };
+		A01C5FD819C6647E00FC26A2 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C5FCE19C6647E00FC26A2 /* Account.m */; };
+		A01C5FDB19C6647E00FC26A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C5FD519C6647E00FC26A2 /* main.m */; };
+		A01C5FDC19C6647E00FC26A2 /* NSObjCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C5FD719C6647E00FC26A2 /* NSObjCategory.m */; };
 		A090C8E219C2069000367E83 /* M2SKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A090C8E119C2069000367E83 /* M2SKUtils.m */; };
 		A090C8E519C2154D00367E83 /* M2ControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A090C8E419C2154D00367E83 /* M2ControllerUtils.m */; };
 		A0CE9C9219C0667200B89526 /* M2Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CE9C9119C0667200B89526 /* M2Properties.m */; };
@@ -99,6 +102,14 @@
 		24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
 		24C4517F18E265390001FCFD /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
 		24C4518018E265390001FCFD /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		A01C5FCD19C6647E00FC26A2 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Account.h; path = Contracts/Account.h; sourceTree = "<group>"; };
+		A01C5FCE19C6647E00FC26A2 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Account.m; path = Contracts/Account.m; sourceTree = "<group>"; };
+		A01C5FCF19C6647E00FC26A2 /* Account+Contract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Account+Contract.h"; path = "Contracts/Account+Contract.h"; sourceTree = "<group>"; };
+		A01C5FD019C6647E00FC26A2 /* Contracts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contracts.h; path = Contracts/Contracts.h; sourceTree = "<group>"; };
+		A01C5FD319C6647E00FC26A2 /* M2ScoreViewContract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M2ScoreViewContract.h; path = Contracts/M2ScoreViewContract.h; sourceTree = "<group>"; };
+		A01C5FD519C6647E00FC26A2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Contracts/main.m; sourceTree = "<group>"; };
+		A01C5FD619C6647E00FC26A2 /* NSObjCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObjCategory.h; path = Contracts/NSObjCategory.h; sourceTree = "<group>"; };
+		A01C5FD719C6647E00FC26A2 /* NSObjCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjCategory.m; path = Contracts/NSObjCategory.m; sourceTree = "<group>"; };
 		A090C8E019C2069000367E83 /* M2SKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SKUtils.h; sourceTree = "<group>"; };
 		A090C8E119C2069000367E83 /* M2SKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SKUtils.m; sourceTree = "<group>"; };
 		A090C8E319C2154D00367E83 /* M2ControllerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ControllerUtils.h; sourceTree = "<group>"; };
@@ -304,6 +315,14 @@
 		A09D030119C36C4D00610043 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
+				A01C5FCD19C6647E00FC26A2 /* Account.h */,
+				A01C5FCE19C6647E00FC26A2 /* Account.m */,
+				A01C5FCF19C6647E00FC26A2 /* Account+Contract.h */,
+				A01C5FD019C6647E00FC26A2 /* Contracts.h */,
+				A01C5FD319C6647E00FC26A2 /* M2ScoreViewContract.h */,
+				A01C5FD519C6647E00FC26A2 /* main.m */,
+				A01C5FD619C6647E00FC26A2 /* NSObjCategory.h */,
+				A01C5FD719C6647E00FC26A2 /* NSObjCategory.m */,
 			);
 			name = Contracts;
 			sourceTree = "<group>";
@@ -418,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01C5FDB19C6647E00FC26A2 /* main.m in Sources */,
 				2443DCA618D66CCC00C920C1 /* M2ViewController.m in Sources */,
 				2443DC6418D662CA00C920C1 /* main.m in Sources */,
 				24C4515B18D6DC4A0001FCFD /* M2Cell.m in Sources */,
@@ -425,6 +445,7 @@
 				2443DC9A18D663FC00C920C1 /* M2Scene.m in Sources */,
 				A0F7086719BF9E0F002E9F01 /* M2JoyfulTheme.m in Sources */,
 				24C4515E18D6DC740001FCFD /* M2Grid.m in Sources */,
+				A01C5FDC19C6647E00FC26A2 /* NSObjCategory.m in Sources */,
 				24C4518118E265390001FCFD /* M2Overlay.m in Sources */,
 				2443DCAF18D6C18400C920C1 /* M2Tile.m in Sources */,
 				A0CE9C9219C0667200B89526 /* M2Properties.m in Sources */,
@@ -435,6 +456,7 @@
 				24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */,
 				A0F7087119BFA848002E9F01 /* M2AppereanceUtils.m in Sources */,
 				A0F7086D19BF9F82002E9F01 /* M2VibrantTheme.m in Sources */,
+				A01C5FD819C6647E00FC26A2 /* Account.m in Sources */,
 				A0F7086A19BF9F12002E9F01 /* M2DefaultTheme.m in Sources */,
 				24C4516418DABABE0001FCFD /* M2GlobalState.m in Sources */,
 				2443DC6818D662CA00C920C1 /* M2AppDelegate.m in Sources */,

@@ -8,11 +8,23 @@
 
 #import "M2AppDelegate.h"
 
+#define __CONTRACTS__
+
+#ifdef __CONTRACTS__
+    #import "../Contracts/Contracts.h"
+    #import "../Contracts/M2ScoreViewContract.h"
+#else
+    #define APPLY_CONTRACT(c)
+#endif
+
 @implementation M2AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  return YES;
+    // TODO: Init contracts in this method
+    APPLY_CONTRACT(M2ScoreView)
+   
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

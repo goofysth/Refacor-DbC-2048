@@ -103,3 +103,9 @@ static int CONTRACTS_CURRENT_STATE;
 	- (void) invariants {}
 @end
 
+@interface UIView (CONTRACT)
+- (void) invariants;
+@end
+@implementation UIView (CONTRACT)
+- (void) invariants {}
+@end
