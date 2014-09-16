@@ -46,11 +46,7 @@ BEGIN_CONTRACT (M2Grid)
 - (M2Cell *)cellAtPosition:(M2Position)position VERIFY (
      
      REQUIRE(
-             FACT(position.x >= 0)
-             FACT(position.x < self.dimension)
-             FACT(position.y >= 0)
-             FACT(position.y < self.dimension)
-             )
+            )
      M2Cell *Result = [super cellAtPosition:position];
                                                         
      ENSURE(
@@ -59,16 +55,20 @@ BEGIN_CONTRACT (M2Grid)
 )
 
 - (M2Tile *)tileAtPosition:(M2Position)position VERIFY (
-       REQUIRE(
-            FACT(position.x >= 0)
-            FACT(position.x < self.dimension)
-            FACT(position.y >= 0)
-            FACT(position.y < self.dimension)
-       )
-        M2Tile *Result = [super cellAtPosition:position];
-                                                        
+        
+        REQUIRE(
+               )
+        M2Tile *Result = [super tileAtPosition:position];
+                          
         ENSURE(
-           FACT(Result != nil)
+           FACT(Result != nil || (
+                position.x < 0 ||
+                position.y < 0 ||
+                position.x >= self.dimension ||
+                position.y >= self.dimension ) ||
+                (position.x == 0 ||
+                 position.y == 0
+                 ))
         )
 )
 - (BOOL)hasAvailableCells; VERIFY(
