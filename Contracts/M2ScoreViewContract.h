@@ -31,6 +31,8 @@ BEGIN_CONTRACT (M2ScoreView)
         [super updateAppearance]; // call the method
         ENSURE (
              FACT (self.backgroundColor != [GSTATE scoreBoardColor]);
+             FACT([ [self.title.font fontName] isEqual:[GSTATE regularFontName]]);
+             FACT([ [self.score.font fontName] isEqual:[GSTATE boldFontName]]);
              )
         )
 

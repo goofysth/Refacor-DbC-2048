@@ -34,6 +34,7 @@ BEGIN_CONTRACT (M2SettingsDetailViewController)
 
     - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section VERIFY (
        REQUIRE (
+                FACT(section > 0)
                 FACT (tableView != nil);
                 )
        int Result = [super tableView:tableView numberOfRowsInSection:section]; // call the method
@@ -44,6 +45,7 @@ BEGIN_CONTRACT (M2SettingsDetailViewController)
 
     - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section VERIFY (
         REQUIRE (
+                 FACT(section > 0)
                  FACT (tableView != nil);
                  )
         NSString *footer = self.footer;
@@ -51,6 +53,7 @@ BEGIN_CONTRACT (M2SettingsDetailViewController)
         NSString *Result = [super tableView:tableView titleForFooterInSection:section]; // call the method
         ENSURE (
                 FACT (Result != nil);
+                FACT(![Result isEqualToString:@""])
                 FACT (self.footer == OLD(footer))
                 )
         )

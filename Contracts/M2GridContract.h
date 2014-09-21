@@ -22,7 +22,7 @@ BEGIN_CONTRACT (M2Grid)
             FACT (self.scene != nil);
         )
 + (void) allocCellsOnGrid:(NSMutableArray *)_grid withSize:(NSInteger)dimension VERIFY_PROC (
-                                                                                             
+        
         REQUIRE(
                 FACT(_grid != nil)
                 FACT(dimension >0)
@@ -69,6 +69,7 @@ BEGIN_CONTRACT (M2Grid)
                 (position.x == 0 ||
                  position.y == 0
                  ))
+           FACT(Result == [super cellAtPosition:position].tile );
         )
 )
 - (BOOL)hasAvailableCells; VERIFY(
