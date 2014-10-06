@@ -25,7 +25,6 @@ BOOL iterate(NSInteger value, BOOL countUp, NSInteger upper, NSInteger lower) {
   return countUp ? value < upper : value > lower;
 }
 
-
 @implementation M2GameManager {
   /* True if game over. */
   BOOL _over;
@@ -46,6 +45,14 @@ BOOL iterate(NSInteger value, BOOL countUp, NSInteger upper, NSInteger lower) {
   M2Grid *_grid;
 }
 
++ (id)sharedM2GameManager {
+    static M2GameManager *sharedM2GameManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedM2GameManager = [[self alloc] init];
+    });
+    return sharedM2GameManager;
+}
 
 # pragma mark - Setup
 

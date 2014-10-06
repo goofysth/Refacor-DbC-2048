@@ -27,7 +27,7 @@
 - (id)initWithSize:(CGSize)size
 {
   if (self = [super initWithSize:size]) {
-    _manager = [[M2GameManager alloc] init];
+      _manager = [M2GameManager sharedM2GameManager];
   }
   return self;
 }

@@ -21,6 +21,13 @@ typedef NS_ENUM(NSInteger, M2Direction) {
 @interface M2GameManager : NSObject
 
 /**
+ *  Gets the singleton object of M2GameManager
+ *
+ *  @return Returning one and only one instantiated object of M2GameManager class
+ */
++ (id)sharedM2GameManager;
+
+/**
  * Starts a new session with the provided scene.
  *
  * @param scene The scene in which the game happens.
