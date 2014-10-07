@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "M2Theme.h"
 
-@interface M2DefaultTheme : NSObject <M2Theme>
+@interface M2DefaultTheme : M2Theme
 @end
 

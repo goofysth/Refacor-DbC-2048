@@ -13,6 +13,55 @@
 
 @implementation M2Theme
 
+// Init is is abstract, should be overriden
+
+- (UIColor *)boardColor {
+    return [self.color boardColor];
+}
+
+- (UIColor *)backgroundColor {
+    return [self.color backgroundColor];
+}
+
+- (UIColor *)scoreBoardColor {
+    return [self.color scoreBoardColor];
+}
+
+- (UIColor *)buttonColor {
+    return [self.color buttonColor];
+}
+
+- (NSString *)boldFontName {
+    return [self.font boldFontName];
+}
+
+- (NSString *)regularFontName {
+    return [self.font regularFontName];
+}
+
+- (UIColor *)colorForLevel:(NSInteger)level {
+    return [self.color colorForLevel:level];
+}
+
+- (UIColor *)textColorForLevel:(NSInteger)level {
+    return [self.color textColorForLevel:level];
+}
+
++ (M2Theme *)themeForType:(NSInteger)type
+{
+    switch (type) {
+        case 1:
+            return [[M2VibrantTheme alloc] init];
+        case 2:
+            return [[M2JoyfulTheme alloc] init];
+            break;
+        default:
+            return [[M2DefaultTheme alloc] init];
+            break;
+    }
+}
+
+
 + (Class)themeClassForType:(NSInteger)type
 {
   switch (type) {

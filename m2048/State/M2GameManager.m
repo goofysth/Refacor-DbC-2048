@@ -43,10 +43,12 @@ BOOL iterate(NSInteger value, BOOL countUp, NSInteger upper, NSInteger lower) {
   
   /* The grid on which everything happens. */
   M2Grid *_grid;
+    
 }
 
+static M2GameManager *sharedM2GameManager = nil;
+
 + (id)sharedM2GameManager {
-    static M2GameManager *sharedM2GameManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedM2GameManager = [[self alloc] init];

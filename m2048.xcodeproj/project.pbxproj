@@ -33,6 +33,10 @@
 		24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4516F18DFF10B0001FCFD /* M2ScoreView.m */; };
 		24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */; };
 		24C4518118E265390001FCFD /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4518018E265390001FCFD /* M2Overlay.m */; };
+		A02D543619E3625500654F5C /* M2VibrantColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D543519E3625500654F5C /* M2VibrantColor.m */; };
+		A02D543919E3630900654F5C /* M2JoyfulColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D543819E3630900654F5C /* M2JoyfulColor.m */; };
+		A02D543C19E3636900654F5C /* M2DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D543B19E3636900654F5C /* M2DefaultColor.m */; };
+		A02D543F19E363E300654F5C /* M2AvenirNextDemiBoldFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D543E19E363E300654F5C /* M2AvenirNextDemiBoldFont.m */; };
 		A090C8E219C2069000367E83 /* M2SKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A090C8E119C2069000367E83 /* M2SKUtils.m */; };
 		A090C8E519C2154D00367E83 /* M2ControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A090C8E419C2154D00367E83 /* M2ControllerUtils.m */; };
 		A0CE9C9219C0667200B89526 /* M2Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CE9C9119C0667200B89526 /* M2Properties.m */; };
@@ -89,7 +93,7 @@
 		24C4515C18D6DC740001FCFD /* M2Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Grid.h; sourceTree = "<group>"; };
 		24C4515D18D6DC740001FCFD /* M2Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Grid.m; sourceTree = "<group>"; };
 		24C4516118DABABE0001FCFD /* M2GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GlobalState.h; sourceTree = "<group>"; };
-		24C4516218DABABE0001FCFD /* M2GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GlobalState.m; sourceTree = "<group>"; };
+		24C4516218DABABE0001FCFD /* M2GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = M2GlobalState.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		24C4516318DABABE0001FCFD /* M2Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Position.h; sourceTree = "<group>"; };
 		24C4516618DD64A90001FCFD /* M2GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GridView.h; sourceTree = "<group>"; };
 		24C4516718DD64A90001FCFD /* M2GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GridView.m; sourceTree = "<group>"; };
@@ -99,6 +103,16 @@
 		24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
 		24C4517F18E265390001FCFD /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
 		24C4518018E265390001FCFD /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		A02D543019E3553100654F5C /* M2ThemeColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M2ThemeColor.h; sourceTree = "<group>"; };
+		A02D543119E355D400654F5C /* M2ThemeFontStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M2ThemeFontStyles.h; sourceTree = "<group>"; };
+		A02D543419E3625500654F5C /* M2VibrantColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2VibrantColor.h; sourceTree = "<group>"; };
+		A02D543519E3625500654F5C /* M2VibrantColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2VibrantColor.m; sourceTree = "<group>"; };
+		A02D543719E3630900654F5C /* M2JoyfulColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2JoyfulColor.h; sourceTree = "<group>"; };
+		A02D543819E3630900654F5C /* M2JoyfulColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2JoyfulColor.m; sourceTree = "<group>"; };
+		A02D543A19E3636900654F5C /* M2DefaultColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2DefaultColor.h; sourceTree = "<group>"; };
+		A02D543B19E3636900654F5C /* M2DefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2DefaultColor.m; sourceTree = "<group>"; };
+		A02D543D19E363E300654F5C /* M2AvenirNextDemiBoldFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2AvenirNextDemiBoldFont.h; sourceTree = "<group>"; };
+		A02D543E19E363E300654F5C /* M2AvenirNextDemiBoldFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2AvenirNextDemiBoldFont.m; sourceTree = "<group>"; };
 		A090C8E019C2069000367E83 /* M2SKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SKUtils.h; sourceTree = "<group>"; };
 		A090C8E119C2069000367E83 /* M2SKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SKUtils.m; sourceTree = "<group>"; };
 		A090C8E319C2154D00367E83 /* M2ControllerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ControllerUtils.h; sourceTree = "<group>"; };
@@ -262,6 +276,8 @@
 			children = (
 				2443DCA118D6649500C920C1 /* M2Theme.h */,
 				2443DCA218D6649500C920C1 /* M2Theme.m */,
+				A02D543219E3620D00654F5C /* Color */,
+				A02D543319E3621700654F5C /* Fonts */,
 				A0F7086B19BF9F82002E9F01 /* M2VibrantTheme.h */,
 				A0F7086C19BF9F82002E9F01 /* M2VibrantTheme.m */,
 				A0F7086519BF9E0F002E9F01 /* M2JoyfulTheme.h */,
@@ -310,6 +326,30 @@
 				24C4518018E265390001FCFD /* M2Overlay.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A02D543219E3620D00654F5C /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A02D543419E3625500654F5C /* M2VibrantColor.h */,
+				A02D543519E3625500654F5C /* M2VibrantColor.m */,
+				A02D543019E3553100654F5C /* M2ThemeColor.h */,
+				A02D543719E3630900654F5C /* M2JoyfulColor.h */,
+				A02D543819E3630900654F5C /* M2JoyfulColor.m */,
+				A02D543A19E3636900654F5C /* M2DefaultColor.h */,
+				A02D543B19E3636900654F5C /* M2DefaultColor.m */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		A02D543319E3621700654F5C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A02D543119E355D400654F5C /* M2ThemeFontStyles.h */,
+				A02D543D19E363E300654F5C /* M2AvenirNextDemiBoldFont.h */,
+				A02D543E19E363E300654F5C /* M2AvenirNextDemiBoldFont.m */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		A09D030119C36C4D00610043 /* Contracts */ = {
@@ -449,6 +489,7 @@
 				E21F0A6219C7A264003CC989 /* NSObjCategory.m in Sources */,
 				2443DCAF18D6C18400C920C1 /* M2Tile.m in Sources */,
 				A0CE9C9219C0667200B89526 /* M2Properties.m in Sources */,
+				A02D543619E3625500654F5C /* M2VibrantColor.m in Sources */,
 				2443DCA018D6647000C920C1 /* M2SettingsViewController.m in Sources */,
 				24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */,
 				A090C8E519C2154D00367E83 /* M2ControllerUtils.m in Sources */,
@@ -456,12 +497,15 @@
 				24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */,
 				A0F7087119BFA848002E9F01 /* M2AppereanceUtils.m in Sources */,
 				A0F7086D19BF9F82002E9F01 /* M2VibrantTheme.m in Sources */,
+				A02D543C19E3636900654F5C /* M2DefaultColor.m in Sources */,
 				A0F7086A19BF9F12002E9F01 /* M2DefaultTheme.m in Sources */,
 				24C4516418DABABE0001FCFD /* M2GlobalState.m in Sources */,
 				E21F0A6519C7A281003CC989 /* M2AppDelegate.m in Sources */,
 				2443DC9B18D663FC00C920C1 /* M2GameManager.m in Sources */,
+				A02D543919E3630900654F5C /* M2JoyfulColor.m in Sources */,
 				A090C8E219C2069000367E83 /* M2SKUtils.m in Sources */,
 				E21F0A6119C7A264003CC989 /* Account.m in Sources */,
+				A02D543F19E363E300654F5C /* M2AvenirNextDemiBoldFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

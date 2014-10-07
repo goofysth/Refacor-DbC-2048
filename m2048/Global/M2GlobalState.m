@@ -160,13 +160,13 @@
 
 - (UIColor *)colorForLevel:(NSInteger)level
 {
-  return [[M2Theme themeClassForType:self.theme] colorForLevel:level];
+  return [[M2Theme themeForType:self.theme] colorForLevel:level];
 }
 
 
 - (UIColor *)textColorForLevel:(NSInteger)level
 {
-  return [[M2Theme themeClassForType:self.theme] textColorForLevel:level];
+  return [[M2Theme themeForType:self.theme] textColorForLevel:level];
 }
 
 
@@ -190,37 +190,37 @@
 
 - (UIColor *)backgroundColor
 {
-  return [[M2Theme themeClassForType:self.theme] backgroundColor];
+  return [[M2Theme themeForType:self.theme] backgroundColor];
 }
 
 
 - (UIColor *)scoreBoardColor
 {
-  return [[M2Theme themeClassForType:self.theme] scoreBoardColor];
+  return [[M2Theme themeForType:self.theme] scoreBoardColor];
 }
 
 
 - (UIColor *)boardColor
 {
-  return [[M2Theme themeClassForType:self.theme] boardColor];
+  return [[M2Theme themeForType:self.theme] boardColor];
 }
 
 
 - (UIColor *)buttonColor
 {
-  return [[M2Theme themeClassForType:self.theme] buttonColor];
+  return [[M2Theme themeForType:self.theme] buttonColor];
 }
 
 
 - (NSString *)boldFontName
 {
-  return [[M2Theme themeClassForType:self.theme] boldFontName];
+  return [[M2Theme themeForType:self.theme] boldFontName];
 }
 
 
 - (NSString *)regularFontName
 {
-  return [[M2Theme themeClassForType:self.theme] regularFontName];
+  return [[M2Theme themeForType:self.theme] regularFontName];
 }
 
 # pragma mark - Position to point conversion

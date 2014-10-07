@@ -1,30 +1,16 @@
 //
-//  M2DefaultTheme.m
+//  M2DefaultColor.m
 //  m2048
 //
-//  Created by Dragan Basta on 9/9/14.
+//  Created by Dragan Basta on 10/7/14.
 //  Copyright (c) 2014 Danqing. All rights reserved.
 //
 
-#import "M2DefaultTheme.h"
-#import "M2AppereanceUtils.h"
 #import "M2DefaultColor.h"
-#import "M2AvenirNextDemiBoldFont.h"
+#import "M2AppereanceUtils.h"
 
-@implementation M2DefaultTheme
-- (instancetype) init {
-    self = [super init];
-    
-    if (self) {
-        //TODO: check if classes conform to certain protocols
-        self.color = [[M2DefaultColor alloc] init];
-        self.font = [[M2AvenirNextDemiBoldFont alloc] init];
-    }
-    
-    return self;
-}
-/*
-+ (UIColor *)colorForLevel:(NSInteger)level
+@implementation M2DefaultColor
+- (UIColor *)colorForLevel:(NSInteger)level
 {
     switch (level) {
         case 1:
@@ -62,7 +48,7 @@
 }
 
 
-+ (UIColor *)textColorForLevel:(NSInteger)level
+- (UIColor *)textColorForLevel:(NSInteger)level
 {
     switch (level) {
         case 1:
@@ -74,39 +60,27 @@
 }
 
 
-+ (UIColor *)backgroundColor
+- (UIColor *)backgroundColor
 {
     return RGB(250, 248, 239);
 }
 
 
-+ (UIColor *)boardColor
+- (UIColor *)boardColor
 {
     return RGB(204, 192, 179);
 }
 
 
-+ (UIColor *)scoreBoardColor
+- (UIColor *)scoreBoardColor
 {
     return RGB(187, 173, 160);
 }
 
 
-+ (UIColor *)buttonColor
+- (UIColor *)buttonColor
 {
     return RGB(119, 110, 101);
 }
 
-
-+ (NSString *)boldFontName
-{
-    return @"AvenirNext-DemiBold";
-}
-
-
-+ (NSString *)regularFontName
-{
-    return @"AvenirNext-Regular";
-}
-*/
 @end
