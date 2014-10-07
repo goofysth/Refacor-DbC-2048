@@ -60,18 +60,4 @@
             break;
     }
 }
-
-
-+ (Class)themeClassForType:(NSInteger)type
-{
-  switch (type) {
-    case 1:
-      return [M2VibrantTheme class];
-    case 2:
-      return [M2JoyfulTheme class];
-    default:
-      return [M2DefaultTheme class];
-  }
-}
-
 @end
