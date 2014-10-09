@@ -37,6 +37,9 @@
 		A02D543919E3630900654F5C /* M2JoyfulColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D543819E3630900654F5C /* M2JoyfulColor.m */; };
 		A02D543C19E3636900654F5C /* M2DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D543B19E3636900654F5C /* M2DefaultColor.m */; };
 		A02D543F19E363E300654F5C /* M2AvenirNextDemiBoldFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D543E19E363E300654F5C /* M2AvenirNextDemiBoldFont.m */; };
+		A053300E19E6F7BA008CA6E3 /* M2PowerOf2State.m in Sources */ = {isa = PBXBuildFile; fileRef = A053300D19E6F7BA008CA6E3 /* M2PowerOf2State.m */; };
+		A053301119E6F869008CA6E3 /* M2PowerOf3State.m in Sources */ = {isa = PBXBuildFile; fileRef = A053301019E6F869008CA6E3 /* M2PowerOf3State.m */; };
+		A053301419E6F890008CA6E3 /* M2FibonacciState.m in Sources */ = {isa = PBXBuildFile; fileRef = A053301319E6F890008CA6E3 /* M2FibonacciState.m */; };
 		A090C8E219C2069000367E83 /* M2SKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A090C8E119C2069000367E83 /* M2SKUtils.m */; };
 		A090C8E519C2154D00367E83 /* M2ControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A090C8E419C2154D00367E83 /* M2ControllerUtils.m */; };
 		A0CE9C9219C0667200B89526 /* M2Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CE9C9119C0667200B89526 /* M2Properties.m */; };
@@ -113,6 +116,13 @@
 		A02D543B19E3636900654F5C /* M2DefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2DefaultColor.m; sourceTree = "<group>"; };
 		A02D543D19E363E300654F5C /* M2AvenirNextDemiBoldFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2AvenirNextDemiBoldFont.h; sourceTree = "<group>"; };
 		A02D543E19E363E300654F5C /* M2AvenirNextDemiBoldFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2AvenirNextDemiBoldFont.m; sourceTree = "<group>"; };
+		A053300C19E6F7BA008CA6E3 /* M2PowerOf2State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2PowerOf2State.h; sourceTree = "<group>"; };
+		A053300D19E6F7BA008CA6E3 /* M2PowerOf2State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2PowerOf2State.m; sourceTree = "<group>"; };
+		A053300F19E6F869008CA6E3 /* M2PowerOf3State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2PowerOf3State.h; sourceTree = "<group>"; };
+		A053301019E6F869008CA6E3 /* M2PowerOf3State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2PowerOf3State.m; sourceTree = "<group>"; };
+		A053301219E6F890008CA6E3 /* M2FibonacciState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2FibonacciState.h; sourceTree = "<group>"; };
+		A053301319E6F890008CA6E3 /* M2FibonacciState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2FibonacciState.m; sourceTree = "<group>"; };
+		A0862C0E19E709B300C0E0D6 /* M2GameState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M2GameState.h; sourceTree = "<group>"; };
 		A090C8E019C2069000367E83 /* M2SKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SKUtils.h; sourceTree = "<group>"; };
 		A090C8E119C2069000367E83 /* M2SKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SKUtils.m; sourceTree = "<group>"; };
 		A090C8E319C2154D00367E83 /* M2ControllerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ControllerUtils.h; sourceTree = "<group>"; };
@@ -308,6 +318,13 @@
 			children = (
 				24C4516118DABABE0001FCFD /* M2GlobalState.h */,
 				24C4516218DABABE0001FCFD /* M2GlobalState.m */,
+				A0862C0E19E709B300C0E0D6 /* M2GameState.h */,
+				A053300F19E6F869008CA6E3 /* M2PowerOf3State.h */,
+				A053301019E6F869008CA6E3 /* M2PowerOf3State.m */,
+				A053301219E6F890008CA6E3 /* M2FibonacciState.h */,
+				A053301319E6F890008CA6E3 /* M2FibonacciState.m */,
+				A053300C19E6F7BA008CA6E3 /* M2PowerOf2State.h */,
+				A053300D19E6F7BA008CA6E3 /* M2PowerOf2State.m */,
 				24C4516318DABABE0001FCFD /* M2Position.h */,
 				A0CE9C9019C0667200B89526 /* M2Properties.h */,
 				A0CE9C9119C0667200B89526 /* M2Properties.m */,
@@ -479,7 +496,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2443DCA618D66CCC00C920C1 /* M2ViewController.m in Sources */,
+				A053301119E6F869008CA6E3 /* M2PowerOf3State.m in Sources */,
 				2443DC6418D662CA00C920C1 /* main.m in Sources */,
+				A053300E19E6F7BA008CA6E3 /* M2PowerOf2State.m in Sources */,
 				24C4515B18D6DC4A0001FCFD /* M2Cell.m in Sources */,
 				24C4516818DD64A90001FCFD /* M2GridView.m in Sources */,
 				2443DC9A18D663FC00C920C1 /* M2Scene.m in Sources */,
@@ -505,6 +524,7 @@
 				A02D543919E3630900654F5C /* M2JoyfulColor.m in Sources */,
 				A090C8E219C2069000367E83 /* M2SKUtils.m in Sources */,
 				E21F0A6119C7A264003CC989 /* Account.m in Sources */,
+				A053301419E6F890008CA6E3 /* M2FibonacciState.m in Sources */,
 				A02D543F19E363E300654F5C /* M2AvenirNextDemiBoldFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

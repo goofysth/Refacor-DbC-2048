@@ -5,6 +5,7 @@
 //  Created by Danqing on 3/16/14.
 //  Copyright (c) 2014 Danqing. All rights reserved.
 //
+//  Abstract class. Should implement Method below.
 
 #import "M2Theme.h"
 #import "M2JoyfulTheme.h"
@@ -13,7 +14,16 @@
 
 @implementation M2Theme
 
-// Init is is abstract, should be overriden
+// Init is abstract, should be overriden
+- (instancetype) init {
+    self = [super init];
+    
+    if (self){
+        //Should implement init method
+    }
+    
+    return self;
+}
 
 - (UIColor *)boardColor {
     return [self.color boardColor];

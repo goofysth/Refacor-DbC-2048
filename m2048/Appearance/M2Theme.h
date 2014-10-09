@@ -5,6 +5,7 @@
 //  Created by Danqing on 3/16/14.
 //  Copyright (c) 2014 Danqing. All rights reserved.
 //
+//  Abstract class. Should implement Method below.
 
 #import <Foundation/Foundation.h>
 #import "M2ThemeColor.h"
@@ -22,6 +23,9 @@
  *  Holds fonts scheme
  */
 @property (nonatomic, strong) id <M2ThemeFontStyles> font;
+
+/** Abstract method init. Should be implemented */
+- (instancetype) init;
 
 /** The background color of the board base. */
 - (UIColor *)boardColor;
