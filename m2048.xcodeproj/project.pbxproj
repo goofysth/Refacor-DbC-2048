@@ -106,6 +106,7 @@
 		24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
 		24C4517F18E265390001FCFD /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
 		24C4518018E265390001FCFD /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		A01D87AA19E7D6C900A1E69B /* M2ObserverManagers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M2ObserverManagers.h; sourceTree = "<group>"; };
 		A02D543019E3553100654F5C /* M2ThemeColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M2ThemeColor.h; sourceTree = "<group>"; };
 		A02D543119E355D400654F5C /* M2ThemeFontStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M2ThemeFontStyles.h; sourceTree = "<group>"; };
 		A02D543419E3625500654F5C /* M2VibrantColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2VibrantColor.h; sourceTree = "<group>"; };
@@ -277,6 +278,7 @@
 			children = (
 				2443DC9818D663FC00C920C1 /* M2GameManager.h */,
 				2443DC9918D663FC00C920C1 /* M2GameManager.m */,
+				A01D87AA19E7D6C900A1E69B /* M2ObserverManagers.h */,
 			);
 			path = State;
 			sourceTree = "<group>";
