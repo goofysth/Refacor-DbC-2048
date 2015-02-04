@@ -7,12 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "M2ObserverManagers.h"
 
 @class M2Scene;
 @class M2Grid;
 
-@interface M2GameManager : NSObject <M2ObserverManagers>
+typedef NS_ENUM(NSInteger, M2Direction) {
+  M2DirectionUp,
+  M2DirectionLeft,
+  M2DirectionDown,
+  M2DirectionRight
+};
+
+@interface M2GameManager : NSObject
 
 /**
  *  Gets the singleton object of M2GameManager

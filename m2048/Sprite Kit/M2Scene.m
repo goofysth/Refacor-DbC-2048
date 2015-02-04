@@ -16,11 +16,6 @@
   M2GameManager *_manager;
   
   /**
-   *  Holds observers (which conform to M2ObserverManagers  protocol)
-   */
-  NSMutableArray *observers;
-  
-  /**
    * Each swipe triggers at most one action, and we don't wait the swipe to complete
    * before triggering the action (otherwise the user may swipe a long way but nothing
    * happens). So after a swipe is done, we turn this flag to NO to prevent further
@@ -33,8 +28,6 @@
 {
   if (self = [super initWithSize:size]) {
       _manager = [M2GameManager sharedM2GameManager];
-      observers = [[NSMutableArray alloc] init];
-      [self addObserver:_manager];
   }
   return self;
 }
@@ -96,14 +89,14 @@
   // Swipe too short. Don't do anything.
   if (MAX(absX, absY) < EFFECTIVE_SWIPE_DISTANCE_THRESHOLD) return;
   
-  M2Direction direction;
-    if (absX > absY * VALID_SWIPE_DIRECTION_THRESHOLD) {
-        direction = translation.x < 0 ? M2DirectionLeft : M2DirectionRight;
-    } else if (absY > absX * VALID_SWIPE_DIRECTION_THRESHOLD) {
-        direction = translation.y < 0 ? M2DirectionUp : M2DirectionDown;
-    }
-    
-    [self notifyWithDirection:direction];
+  // We only accept horizontal or vertical swipes, but not diagonal ones.
+  if (absX > absY * VALID_SWIPE_DIRECTION_THRESHOLD) {
+    translation.x < 0 ? [_manager moveToDirection:M2DirectionLeft] :
+                        [_manager moveToDirection:M2DirectionRight];
+  } else if (absY > absX * VALID_SWIPE_DIRECTION_THRESHOLD) {
+    translation.y < 0 ? [_manager moveToDirection:M2DirectionUp] :
+                        [_manager moveToDirection:M2DirectionDown];
+  }
   
   _hasPendingSwipe = NO;
 }
@@ -116,31 +109,4 @@
   /* Called before each frame is rendered */
 }
 
-# pragma mark - observers
-
-- (void) addObserver:(NSObject *) observer
-{
-    [observers addObject:observer];
-}
-
-- (void) removeObserver:(NSObject *) observer
-{
-    [observers removeObject:observer];
-}
-
-- (void) notifyWithDirection: (M2Direction)direction
-{
-    for (id <M2ObserverManagers> observer in observers) {
-        if ([observer conformsToProtocol:@protocol(M2ObserverManagers)])
-        {
-            
-            [observer moveToDirection:direction];
-        }
-        else
-        {
-            [NSException raise:NSInternalInconsistencyException format:@"objects in the listeners array must confirm to myProtocol"];
-        }
-
-    }
-}
 @end
